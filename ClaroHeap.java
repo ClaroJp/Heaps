@@ -1,9 +1,9 @@
-public class LastnameHeap {
+public class ClaroHeap {
     private int[] heap;
     private int size;
     private int capacity;
 
-    public LastnameHeap(int capacity) {
+    public ClaroHeap(int capacity) {
         this.capacity = capacity;
         this.size = 0;
         heap = new int[capacity];
@@ -50,7 +50,7 @@ public class LastnameHeap {
             System.out.println("Heap is full!");
             return;
         }
-        
+
         heap[size] = value;
         int current = size;
         size++;
@@ -87,7 +87,7 @@ public class LastnameHeap {
     }
 
     public static void main(String[] args) {
-        LastnameHeap heap = new LastnameHeap(10);
+        ClaroHeap heap = new ClaroHeap(10);
 
         heap.insert(10);
         heap.insert(20);
